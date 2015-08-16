@@ -187,8 +187,8 @@
 							<a href="#" class="btn btn-primary" title="See more">See works »</a>
 						</div>
 					</div>
-<!--				</div>
-				<div class="row stylish-panel">-->
+				</div>
+				<div class="row stylish-panel">
 					<div class="col-md-4">
 						<div  style="background-color: #FFFFF5">
 							<img src="http://lorempixel.com/200/200/abstract/4/" alt="Texto Alternativo" class="img-circle img-thumbnail">
