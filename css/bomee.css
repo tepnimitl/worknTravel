@@ -1,0 +1,182 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 15, 2015, 5:41:37 PM
+    Author     : Tepnimit
+*/
+* 
+{
+	margin: 0px;
+	padding: 0px;
+}
+#headerBar
+{
+	background-color: red;
+	width: 100%;
+	height: 50px;
+}
+#headerBar nav
+{
+	overflow: hidden;
+}
+#headerCover
+{
+	background-color: green;
+	width: 100%;
+	height: 500px;
+}
+#sectionMain
+{
+	background-color: blue;
+	width: 100%;
+	height: 200px;
+}
+#upperMain
+{
+	background-color: black;
+	width: 100%;
+	height: 800px;
+}
+#lowerMain
+{
+	background-color: purple;
+	width: 100%;
+	height: 400px;
+}
+#lowerMain-Left
+{
+	background-color: gray;
+	position: relative;
+	width: 40%;
+	height: 100%;
+	float: left;
+}
+#blog
+{
+	background-color: transparent;
+	position: absolute;
+	margin: auto;
+	width: 80%;
+	height: 80%;
+	border: 20px solid wheat;
+	top: 0;left: 0;bottom: 0;right: 0;
+}
+#lowerMain-Right
+{
+	background-color: lightblue;
+	width: 60%;
+	position: relative;
+	height: 100%;
+	float: right;
+}
+#vdo
+{
+	height: 80%;
+	width: 80%;
+	overflow: hidden;
+	margin: auto;
+	position: absolute;
+	background-color: yellow;
+	top:0; left: 0; bottom: 0; right: 0;
+}
+#weather
+{
+	background-color: pink;
+	width: 100%;
+	height: 200px;
+}
+#footer
+{
+	background-color: darksalmon;
+	height: 200px;
+}
+#company
+{
+	background-color: sienna;
+	width: 60%;
+	height: 200px;
+	float: left;
+}
+#link
+{
+	background-color: sandybrown;
+	width: 40%;
+	height: 50%;
+	float: right;
+	display: table;
+}
+.social
+{
+	background-color: salmon;
+	width: 40%;
+	height: 50%;
+	float: right;
+	display: table;
+}
+.item-middle
+{
+	//background-color: red;
+	display: table-cell;
+    text-align: center;
+	vertical-align: middle;
+}
+.item-middle ul
+{
+	list-style: none;
+}
+.item-inline
+{
+	width: 60%;
+	margin: 0 20%;
+}
+.item-inline li
+{
+	float: left;
+	width: 5%;
+    margin: 0 10%;
+	
+}
+#contact
+{
+	background-color: tan;
+	height: 400px;
+}
+#Section-Detail
+{
+	background-color: blue;
+	height: 400px;
+}
+#detail
+{
+	background-color: orange;
+	margin-left: 2.5%;
+	margin-top: 50px;
+	width: 65%;
+	height: 300px;
+	float: left;
+}
+#promotion
+{
+	background-color: brown;
+	margin-right: 2.5%;
+	width: 25%;
+	height: 400px;
+	float: right;
+}
+#detailFrame
+{
+	background-color: yellow;
+	width: 60%;
+	height: 300px;
+	float: left;
+}
+#mediaFrame
+{
+	background-color: black;
+	width: 40%;
+	height: 300px;
+	float: right;
+}
