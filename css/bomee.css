@@ -7,44 +7,195 @@ and open the template in the editor.
     Created on : Aug 15, 2015, 5:41:37 PM
     Author     : Tepnimit
 */
+@import url('style/album.css');
+@import url('style/weather-icon.css');
 * 
 {
 	margin: 0px;
 	padding: 0px;
 }
+.weather
+{
+	background-color: green;
+  margin-top: 10px;
+  padding: 10px 0;
+  padding: .71429rem 0;
+
+  border-bottom: 1px solid #bac2cb;
+}
+ 
+ul.weather-list li
+{
+	background-color: blue;
+  width: 16.666666666%;
+  margin: 0 auto;
+  padding: .92857rem .71429rem;
+
+  border-left: 1px solid #bac2cb;
+}
+ul.weather-list li:first-child
+{
+  border-left: none;
+}
+ul.weather-list li:after
+{
+  display: block;
+  clear: both;
+
+  width: 100%;
+  height: 0;
+
+  content: '';
+}
+ul.weather-list li i.icon
+{
+  font-size: 40px;
+
+  display: block;
+  float: left;
+
+  width: 62px;
+  height: 62px;
+  padding-left: 5px;
+
+  vertical-align: middle;
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+ul.weather-list li div
+{
+  font-size: 1.286rem;
+  font-weight: 700;
+
+  float: left;
+
+  padding-left: .35714rem;
+
+  color: #2a3a4f;
+}
+ul.weather-list li div strong
+{
+  font-size: 1.857rem;
+
+  display: block;
+}
 #headerBar
 {
+	//How to 0 height?
 	background-color: red;
 	width: 100%;
-	height: 50px;
+	height: 0%;
+	margin-top: 0px;
+	padding-top: 0px;
+	top: 0px;
 }
 #headerBar nav
 {
-	overflow: hidden;
+	/*overflow: hidden;*/
+}
+#callNow
+{
+	position: relative;
+}
+#callNow h3
+{
+	position:absolute;
+	right:0;
+	margin-right:10%;
+	color: #fff;
+/*	float: right;*/
+}
+#callNow a:link
+{
+	color: whitesmoke;
+	text-decoration: none;
+}
+#callNow a:hover
+{
+	color: white;
+	background-color: gray;
 }
 #headerCover
-{
-	background-color: green;
+{	
+	/*background-image: url(../assets/images/edit/IMG_1258.jpg);*/
+/*	background-size: cover;
+	background-repeat: no-repeat;*/
+	/*background-color: red;*/
 	width: 100%;
 	height: 500px;
 }
+
+video#bgvid {
+position: fixed;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -100;
+-webkit-transform: translateX(-50%) translateY(-50%);
+transform: translateX(-50%) translateY(-50%);
+background: url(/worknTravel/assets/images/edit/IMG_1258.jpg) no-repeat;
+background-size: cover;
+}
+
+
+/*@media screen and (max-device-width: 800px) {
+body { background: url(/worknTravel/assets/images/edit/IMG_1258.jpg) #000 no-repeat center center fixed; }
+#bgvid { display: none; }
+
+}*/
+
+
+
+#headerCover #container1
+{
+
+	/*background-color: transparent;*/
+	width: 100%;
+	height: 100%;
+	margin-left: 0;
+	margin-right: 0;
+	display: table;
+	background-position: center center;
+	/*vertical-align: middle;*/
+}
+#headerCover #container1 h1
+{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+}
 #sectionMain
 {
-	background-color: blue;
+	background-color: lightgray;
 	width: 100%;
-	height: 200px;
+	height: 100px;
+	display: table;
 }
-#upperMain
+#sectionMain h2
 {
-	background-color: black;
-	width: 100%;
-	height: 800px;
+	display: table-cell;
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+}
+#sectionMain p
+{
+	display: table-row;
+	color: white;
+	text-align: center;
+	vertical-align: middle;
 }
 #lowerMain
 {
-	background-color: purple;
+/*	background-color: purple;
 	width: 100%;
-	height: 400px;
+	height: 500px;*/
 }
 #lowerMain-Left
 {
@@ -53,16 +204,41 @@ and open the template in the editor.
 	width: 40%;
 	height: 100%;
 	float: left;
+	display: table;
 }
 #blog
 {
-	background-color: transparent;
-	position: absolute;
-	margin: auto;
-	width: 80%;
-	height: 80%;
-	border: 20px solid wheat;
-	top: 0;left: 0;bottom: 0;right: 0;
+	width: 100%;
+	height: 100%;
+	margin-top: 10px;
+	padding-bottom: 5%;
+	padding-top: 5%;
+	display: table-cell;
+	border: 10px lightpink solid;
+	border-radius: 15px;
+	vertical-align: middle;
+	text-align: center;
+	color: gray;
+}
+#blog p
+{
+	/*display: table-cell;*/
+	text-align: center;
+	vertical-align: middle;
+}
+#blog img
+{
+/*	width: 50%;
+	height: 50%;*/
+	/*--Phase II*/
+	width: 100%;
+	height: auto;
+	max-width: 100%;
+	padding: 5%;
+	
+	/*
+	text-align: center;
+	vertical-align: middle;*/
 }
 #lowerMain-Right
 {
@@ -74,13 +250,33 @@ and open the template in the editor.
 }
 #vdo
 {
-	height: 80%;
-	width: 80%;
+	/*height: 350px;*/
+	width: 100%;
+	height: 500px;
+/*	margin-top: 10px;
+	margin-bottom: 5%;*/
+/*	padding-bottom: 5%;
+	padding-top: 5%;*/
 	overflow: hidden;
 	margin: auto;
-	position: absolute;
-	background-color: yellow;
 	top:0; left: 0; bottom: 0; right: 0;
+	position: relative;
+}
+#vdo iframe
+{
+	max-width: 100%;
+	max-height: 100%;
+}
+#vdo .media
+{
+	/*padding-top: 2%;*/
+	background-color: transparent;
+	width: 100%; 
+	height: 100%;/*
+	max-width: 100%;*/
+	position: absolute;
+	border-radius: 15px;
+	/*float: right;*/
 }
 #weather
 {
@@ -90,28 +286,35 @@ and open the template in the editor.
 }
 #footer
 {
-	background-color: darksalmon;
-	height: 200px;
+	background-color: #e0e0e0;
+	height: 150px;
+	/*border-top: 1px white solid;*/
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 #company
 {
-	background-color: sienna;
-	width: 60%;
-	height: 200px;
+	background-color: transparent;
+	width: 70%;
+	height: 100%;
 	float: left;
+	display:table;
+	border-right: 1px #aaa groove;
+	border-right-: 80%;
 }
-#link
+.link
 {
-	background-color: sandybrown;
-	width: 40%;
+	background-color: transparent;
+	/*display: inline;*/
+	width: 30%;
 	height: 50%;
 	float: right;
 	display: table;
 }
 .social
 {
-	background-color: salmon;
-	width: 40%;
+	background-color: transparent;
+	width: 30%;
 	height: 50%;
 	float: right;
 	display: table;
@@ -123,7 +326,25 @@ and open the template in the editor.
     text-align: center;
 	vertical-align: middle;
 }
+.item-left
+{
+	//background-color: red;
+	padding-left: 10%;
+	padding-right: 10%;
+	text-align: left;
+}
+.item-right
+{
+	//background-color: red;
+	padding-left: 10%;
+	padding-right: 10%;
+	text-align: left;
+}
 .item-middle ul
+{
+	list-style: none;
+}
+.item-normal
 {
 	list-style: none;
 }
@@ -134,49 +355,228 @@ and open the template in the editor.
 }
 .item-inline li
 {
-	float: left;
-	width: 5%;
-    margin: 0 10%;
-	
+	display: inline;
+	//float: left;
 }
+.btn1 {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 10px;
+  /*font-family: Arial;*/
+  color: #ffffff;
+  font-size: 15px;
+  padding: 5px 15px 5px 15px;
+  text-decoration: none;
+}
+
+.btn1:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+/* !FOCUSED IMAGES */
+/*-----------------------------------------*/
+.focuspoint {
+	position: relative; /*Any position but static should work*/
+	overflow: hidden;
+}
+.focuspoint img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 0;
+	display: block;
+	/* fill and maintain aspect ratio */
+	width: auto; height: auto;
+	min-width: 100%; min-height: 100%;
+	max-height: none; max-width: none;
+}
+
+/*Contact Page CSS*/
 #contact
 {
-	background-color: tan;
-	height: 400px;
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiq7targD3WL-AsOpUN2oTuWpLloAJu_bLX-kH4oOsgvtrIa0DwQ");
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-color: #E6FAFF;
+	padding: 40px;
+	width: 100%;
+	height: 100%;
+	color: gray;
+	display: table;
 }
+#about
+{
+	background-image: url("https://www.uaf.edu/oip/travelalerts/Travel-Alerts-Page-Picture.jpg");
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: center;
+	background-color: #E6FAFF;
+	padding: 50px;
+	padding-left: 200px;
+	padding-right: 200px;
+	width: 100%;
+	height: 500px;
+	color: gray;
+	display: table;
+}
+
+/*Detail Page CSS*/
 #Section-Detail
 {
-	background-color: blue;
-	height: 400px;
+	display: table;
+	background-color: #eee;
+	width: 100%;
+	/*height: auto;*/
+	/*position: absolute;*/
 }
-#detail
+#tabs
 {
-	background-color: orange;
-	margin-left: 2.5%;
-	margin-top: 50px;
+	/*position: relative;*/
+	background-color: white;
+	margin-left: 7.5%;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	/*vertical-align: middle;*/
 	width: 65%;
-	height: 300px;
+	/*height: 400px;*/
+	height: auto;
 	float: left;
+	border-radius: 15px 15px;
+}
+#tabs .nav-tabs
+{
+	/*margin-right:15%;*/
+	background-color: whitesmoke;
+/*	border-color: gray;*/
+}
+#tabs #content
+{
+	background-color: transparent;
+	width: 50%;
+	height: 100%;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px; 
+	float: left;
+}
+#tabs #content h3
+{
+	padding: 2% 5%;
+	text-transform: uppercase;
+}
+#tabs p
+{
+	padding: 2% 5%;
+}
+#mediazone
+{
+	margin-top: 10px;
+	margin-left: -20px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	background-color: transparent;
+	width: 45%;
+	float: right;
+}
+/*#tabs #mediazone .media*/
+ #mediazone .media
+{
+	/*padding-top: 2%;*/
+	background-color: transparent;
+	width: 100%; 
+	height: 100%;
+	/*float: right;*/
+}
+#mediazone img
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	border-image-width: auto;
+	width: 49%;
+	height:auto;
 }
 #promotion
 {
-	background-color: brown;
-	margin-right: 2.5%;
+	/*background-color: brown;*/
+	margin-top: 40px;
+	margin-bottom: 20px;
+	padding-right: 2.5%;
 	width: 25%;
+	height: auto;
+	float: right;
+	
+/*	
+	margin-left: 7.5%;
+	vertical-align: middle;
 	height: 400px;
-	float: right;
+	border-radius: 1%;*/
 }
-#detailFrame
+#promotion table
 {
-	background-color: yellow;
-	width: 60%;
-	height: 300px;
-	float: left;
+/*	width: 100%;
+	border-collapse: separate;
+	border: 1px solid;
+	border-radius: 25px;*/
+
 }
-#mediaFrame
+#promotion table tr td
 {
-	background-color: black;
-	width: 40%;
-	height: 300px;
-	float: right;
+	background-color: whitesmoke;
+	padding-top: 5%;
+	padding-left: 10%;
+	padding-right: 10%;
+	height: 30px;
+	text-align: justify;
+}
+#promotion table tr:last-child td
+{
+	padding-bottom: 5%;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+#promotion table tr th
+{
+	background-color: lightsalmon;
+	height: 50px;
+	text-align: center;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+/*a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}*/
+.worknTravel
+{
+	height: 100%;
+	/*background-image: url('http://www.aiep.am/Work%20and%20Travel%20USA%201.jpg');*/
+	background-image: url("/worknTravel/assets/images/edit/IMG_1254.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*padding-top: 35px;*/
 }

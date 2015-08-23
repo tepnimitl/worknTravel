@@ -4,16 +4,47 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
+<html lang='en'>
 	<head>
-		<title>TODO supply a title</title>
+		<title>Contact</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="css/bomee.css" rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+		<script>
+			$(function () {
+				$("#headerBar").load("headerBar2.html");
+				$("#footer").load("footer.html");
+			});
+		</script>
 	</head>
 	<body>
 		<div id="headerBar"></div>
-		<div id="contact"></div>
+		<div id="sectionMain">
+			<div class="item-middle">
+				<h1>CONTACT</h1> 
+			</div>
+		</div>
+		<div id="contact">
+			<div class="item-right">
+				<h3>All The Way Thailand</h3>
+				<p>Abdurahim Building</p>
+				<p>Silom</p>
+				<p>Tel: 123-456-7890</p>
+				<p>Email: contact@alltheway.com</p>
+			</div>
+			<br>
+			<div class="item-right">
+				<h3>All The Way USA</h3>
+				<p>Thip Khao Building</p>
+				<p>DC</p>
+				<p>Tel: 123-456-7890</p>
+				<p>Email: contact@alltheway.com</p>
+			</div>
+		</div>
 		<div id="footer"></div>
 	</body>
 </html>
