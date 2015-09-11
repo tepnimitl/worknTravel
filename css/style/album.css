@@ -50,6 +50,7 @@ and open the template in the editor.
 	text-align: center;
 	vertical-align: middle;
 	text-transform: uppercase;
+	text-shadow: 1px 1px 5px black;
 }
 /*.col-2-3
 {

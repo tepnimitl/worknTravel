@@ -34,8 +34,8 @@ margin:10px -40px;
 margin-bottom:30px
 }
 #background {
-background: url("http://www.aiep.am/Work%20and%20Travel%20USA%201.jpg");
-background-size: 100%;
+background: url("/assets/images/pic_all_edit/pic2_600/IMG_1352.jpg");
+background-size: cover ;
 background-repeat: no-repeat;
 
 }

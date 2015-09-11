@@ -9,7 +9,7 @@
 <body id="background">
 <div id="main">
 <div id="login">
-<h2>Login Form</h2>
+<h2>Login</h2>
 <form action="" method="post">
 <input id="name" name="username" placeholder="Username" type="text">
 <input id="password" name="password" placeholder="Password" type="password">

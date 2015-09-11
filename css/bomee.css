@@ -9,10 +9,13 @@ and open the template in the editor.
 */
 @import url('style/album.css');
 @import url('style/weather-icon.css');
+/*@import url('//fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic');*/
+/*@import url('//fonts.googleapis.com/css?family=Archivo+Narrow');*/
 * 
 {
 	margin: 0px;
 	padding: 0px;
+	font-family:  Archivo Narrow,Lucida Sans Unicode Narrow , sans-serif;
 }
 .weather
 {
@@ -86,7 +89,7 @@ ul.weather-list li div strong
 	//How to 0 height?
 	background-color: red;
 	width: 100%;
-	height: 0%;
+	height: 30px;
 	margin-top: 0px;
 	padding-top: 0px;
 	top: 0px;
@@ -120,7 +123,7 @@ ul.weather-list li div strong
 }
 #headerCover
 {	
-	/*background-image: url(../assets/images/edit/IMG_1258.jpg);*/
+	/*background-image: url(/assets/images/edit/IMG_1258.jpg);*/
 /*	background-size: cover;
 	background-repeat: no-repeat;*/
 	/*background-color: red;*/
@@ -139,13 +142,13 @@ height: auto;
 z-index: -100;
 -webkit-transform: translateX(-50%) translateY(-50%);
 transform: translateX(-50%) translateY(-50%);
-background: url(/worknTravel/assets/images/edit/IMG_1258.jpg) no-repeat;
+background: url(/assets/images/edit/IMG_1258.jpg) no-repeat;
 background-size: cover;
 }
 
 
 /*@media screen and (max-device-width: 800px) {
-body { background: url(/worknTravel/assets/images/edit/IMG_1258.jpg) #000 no-repeat center center fixed; }
+body { background: url(assets/images/edit/IMG_1258.jpg) #000 no-repeat center center fixed; }
 #bgvid { display: none; }
 
 }*/
@@ -165,29 +168,38 @@ body { background: url(/worknTravel/assets/images/edit/IMG_1258.jpg) #000 no-rep
 	background-position: center center;
 	/*vertical-align: middle;*/
 }
-#headerCover #container1 h1
+ #container1 h1
 {
 	display: table-cell;
 	text-align: center;
 	vertical-align: middle;
 	color: white;
+	text-shadow: 1px 1px 5px black;
 }
-#sectionMain
+ #container1 p
+{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	text-shadow: 1px 1px 5px black;
+}
+.sectionMain
 {
 	background-color: lightgray;
-	margin-top: 50px;
+	/*margin-top: 50px;*/
 	width: 100%;
 	height: 100px;
 	display: table;
 }
-#sectionMain h2
+.sectionMain h2
 {
 	display: table-cell;
 	color: white;
 	text-align: center;
 	vertical-align: middle;
 }
-#sectionMain p
+.sectionMain p
 {
 	display: table-row;
 	color: white;
@@ -289,7 +301,7 @@ body { background: url(/worknTravel/assets/images/edit/IMG_1258.jpg) #000 no-rep
 }
 #footer
 {
-	position: relative;
+	position: static;
 	background-color: #e0e0e0;
 	height: 150px;
 	bottom: 0;
@@ -298,6 +310,7 @@ body { background: url(/worknTravel/assets/images/edit/IMG_1258.jpg) #000 no-rep
 	margin-bottom: 10px;*/
 	clear: both;
     z-index: 10;
+	overflow: auto;
 }
 #company
 {
@@ -413,48 +426,50 @@ body { background: url(/worknTravel/assets/images/edit/IMG_1258.jpg) #000 no-rep
 /*Contact Page CSS*/
 #contact
 {
-	background-image: url("/worknTravel/assets/images/shutterstock_219261496.jpg");
+	background-image: url("/assets/images/pic3/pic3_600/View_14.jpg");
 	background-repeat: no-repeat;
 	background-size:cover;
-	background-color: #E6FAFF;
+	/*background-color: #E6FAFF;*/
 	padding: 40px;
 	width: 100%;
 	height: 100%;
 	color: white;
+	text-shadow: 1px 1px 10px black;
 	display: table;
 }
 #about
 {
-/*	width: 100%;
-	height: auto;*/
-/*	display: table;
-	position: relative;*/
+	/*background-color: brown;*/
+	width: 100%;
+	height: auto;
+	display: table;
+	/*position: relative;*/
 }
-#about:before
+/*#about:before
 {
-	background-image: url("/worknTravel/assets/images/shutterstock_219261496.jpg");
-	opacity: 0.4;
+	background-image: url("/assets/images/shutterstock_219261496.jpg");
+	opacity: 0.6;
 	top: 50%; left: 50%;
 	background-repeat: repeat;
 	background-size: cover;
-	background-position: center;
-	/*background-color: #E6FAFF;*/
-	/*padding: 50px;*/
-/*	padding-left: 10%;
-	padding-right: 10%;*/
-/*	width: auto;
-	height: auto;*/
+	background-position: center;*/
+/*	background-color: #E6FAFF;
+	padding: 50px;
+	padding-left: 10%;
+	padding-right: 10%;
+	width: auto;
+	height: auto;
 	min-height: 100%;
 	min-width: 100%;
 	-webkit-transform: translateX(-50%) translateY(-50%);
 transform: translateX(-50%) translateY(-50%);
 	color: black;
-	/*display: table;*/
+	display: table;
 	position: fixed;
 	z-index: -100;
 	content: "";
 		
-}
+}*/
 #about .content
 {
 	padding-left: 10%;
@@ -462,6 +477,7 @@ transform: translateX(-50%) translateY(-50%);
 	display: table-cell;
 	vertical-align: middle;
 	text-align: left;
+	color: #36635A;
 }
 /*Detail Page CSS*/
 #Section-Detail
@@ -469,6 +485,7 @@ transform: translateX(-50%) translateY(-50%);
 	display: table;
 	background-color: #eee;
 	width: 100%;
+	/*text-align: center;*/
 	/*height: auto;*/
 	/*position: absolute;*/
 }
@@ -578,7 +595,7 @@ transform: translateX(-50%) translateY(-50%);
 	background-color: #E1E2DB;
 	width: 100%;
 	padding: 5%;
-	border-radius: 5%;
+	border-radius: 10px;
 }
 	
 #promotion
@@ -648,11 +665,19 @@ a:hover {
 a:active {
     text-decoration: underline;
 }*/
+.main
+{
+	height: 100%;
+	background-image: url("/assets/images/pic_all_edit/pic3_600/W&T_14.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*padding-top: 35px;*/
+}
 .worknTravel
 {
 	height: 100%;
-	/*background-image: url('http://www.aiep.am/Work%20and%20Travel%20USA%201.jpg');*/
-	background-image: url("/worknTravel/assets/images/edit/IMG_1254.jpg");
+	background-image: url("/assets/images/pic_all_edit/pic3_600/W&T_11.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -661,10 +686,206 @@ a:active {
 .esl
 {
 	height: 100%;
-	/*background-image: url('http://www.aiep.am/Work%20and%20Travel%20USA%201.jpg');*/
-	background-image: url("/worknTravel/assets/images/shutterstock_140079115.jpg");
+	background-image: url("/assets/images/pic_all_edit/pic1_600/ESL_1.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	/*padding-top: 35px;*/
+}
+.film
+{
+	height: 100%;
+	background-image: url("/assets/images/pic_all_edit/pic1_600/Film_16.jpg");
+	background-position: center center;
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*padding-top: 35px;*/
+}
+.makeup
+{
+	height: 100%;
+	background-image: url("/assets/images/pic_all_edit/pic1_600/MakeUp_1.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*padding-top: 35px;*/
+}
+.fashion
+{
+	height: 100%;
+	background-image: url("/assets/images/pic_all_edit/pic1_600/Fashion_6.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*padding-top: 35px;*/
+}
+.culinary
+{
+	height: 100%;
+	background-image: url("/assets/images/pic_all_edit/pic1_600/Hotel_4.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*padding-top: 35px;*/
+}
+.hospitality
+{
+	height: 100%;
+	background-image: url("/assets/images/pic_all_edit/pic1_600/Hotel_1.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*padding-top: 35px;*/
+}
+.studyAboard
+{
+	height: 100%;
+	background-image: url("/assets/images/pic_all_edit/pic3_600/Study_5.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*padding-top: 35px;*/
+}
+.about
+{
+	height: 100%;
+	background-image: url("/assets/images/pic_all_edit/pic1_600/ESL_2.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*padding-top: 35px;*/
+}
+
+
+.application-Container
+{
+	/*display: table;*/
+	background-color: #eee;
+	height: 100%;
+	width: 100%;
+	/*text-align: center;*/
+	/*height: 100%;*/
+	/*position: absolute;*/
+}
+.application-Form
+{
+	/*background-color: brown;*/
+	padding: 5% 10% 5% 10%;
+	width: 100%;
+	/*height: 100%;*/
+	/*display: table-cell;*/
+	text-align: center;
+	vertical-align: middle;
+	/*position: relative;*/
+	/*display: block;*/
+}
+.application-Form .application-Content
+{
+	background-color: white;
+	width: 100%;
+	/*height: 100%;*/
+	padding: 20px 5% 5% 5%;
+	border-radius: 10px;
+	/*border: 1px black solid;*/
+	/*position: relative;*/
+	/*display: table-cell;*/
+	overflow: auto;
+	color: #555;
+	box-shadow:0 0 15px rgba(0,0,0,0.5);
+/*	-webkit-box-shadow:rgba(0,0,0,0.2) 0px 0px 25px;
+	-moz-box-shadow:rgba(0,0,0,0.2) 0px 0px 5px;
+	-o-box-shadow:rgba(0,0,0,0.2) 0px 0px 5px;*/
+}
+.row
+{
+	margin-bottom: 15px;
+	/*display: table;*/
+	/*padding: 0;*/
+}
+.row div
+{
+	/*text-align: left;*/
+	/*margin-bottom: 25px;*/
+	/*padding: 0;*/
+}
+.row .col-md-4
+{
+/*	padding-left: 5px;
+	padding-right: 2px;*/
+	/*margin-left: 1px;*/
+}
+ option
+{
+	/*display: table-cell;*/
+	vertical-align: middle;
+}
+.jobs
+{
+	width: 100;
+	/*background-color: wheat;*/
+	display: table;
+	/*vertical-align: middle;*/
+	text-align: center;
+	position: relative;
+	/*border: 1px black solid;*/
+	
+}
+.jobs .col-md-6
+{
+	padding: 2%;
+	display: table-cell;
+	/*background-color: red;*/
+}
+.jobs .col-md-6 img
+{
+	/*position: absolute;*/
+	display: table-cell;
+	/*hight: 50px;*/
+	width: 100%;
+	/*background-color: blue;*/
+	/*padding: 10%;*/
+	/*vertical-align: middle;*/
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	position: relative;
+	
+}
+.jobs .container1
+{
+	/*border: 1px white solid;*/
+	background-color: #ddd;
+	border-radius: 5px;
+	color: #555;
+	height: 350px;
+	overflow: auto;
+}
+.jobs p
+{
+	text-align: left;
+}
+.qanda
+{
+	text-align: left;
+}
+.q1
+{
+	margin-left: 5%;
+    padding: 2%;
+    text-align: left;
+    background-color: #ddd;
+    border: solid 1px #c3c3c3;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.a1
+{
+	margin-left: 5%;
+    padding: 5%;
+	text-align: left;
+    background-color: whitesmoke;
+    border: solid 1px #c3c3c3;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+    display: none;	
 }

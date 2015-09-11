@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang='en'>
+	<head>
+		<title>Application Form - Work and Travel</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bomee.css" rel="stylesheet" type="text/css"/>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link href="//fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic" rel="stylesheet">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<script>
+			$(function () {
+				$("#datepicker").datepicker();
+			});
+		</script>
+		<script>//
+//			$(function () {
+//				$("#headerBar").load("/headerBar_logo.html");
+//				$("#footer").load("/footer.html");
+//			});
+//		</script>
+	</head>
+	<body>
+		
+		<!--<div id="headerBar"></div>-->
+		<div class="application-Container">
+			<div class="application-Form">
+				<div class="application-Content">
+					<h1><b>Application Form - Work and Travel</b></h1>
+					<h3>กรุณากรอกข้อมูลให้ครบถ้วน</h3>
+
+					<form action="" method="post" class="" role="form">
+						<div>
+							<div class="col-xs-12 col-sm-12 col-md-12">
+
+								<div style="text-align: left">ชื่อภาษาอังกฤษ</div>
+								<div class="row">
+									<div class="col-xs-12 col-sm-2 col-md-2" style="text-align: left;">
+										<select class="form-control" name="title_en">
+											<option value="mr">Mr.</option>
+											<option value="mrs">Ms.</option>
+											<option value="ms">Mrs.</option>
+										</select>
+									</div>
+									<div class="col-xs-12 col-sm-4 col-md-4">
+										<input class="form-control" id="firstname" name="firstname_en" placeholder="Firstname*" type="text" required autofocus/>
+									</div>
+									<div class="col-xs-12 col-sm-4 col-md-4">
+										<input class="form-control" id="surname" name="surname_en" placeholder="Surname*" type="text" required autofocus/>
+									</div>
+									<div class="col-xs-12 col-sm-2 col-md-2">
+										<input class="form-control" id="nickname" name="nickname_en" placeholder="Nickname" type="text"/>
+									</div>
+								</div>
+								<div style="text-align: left">ชื่อภาษาไทย</div>
+								<div class="row">
+									<div class="col-xs-12 col-sm-2 col-md-2">
+										<select class="form-control" name="title_th">
+											<option value="mr">นาย</option>
+											<option value="mrs">นาง</option>
+											<option value="ms">นางสาว</option>
+										</select>
+									</div>
+									<div class="col-xs-12 col-sm-4 col-md-4">
+										<input class="form-control" id="firstname" name="firstname_th" placeholder="ชื่อ*" type="text" required autofocus/>
+									</div>
+									<div class="col-xs-12 col-sm-4 col-md-4">
+										<input class="form-control" id="surname" name="surname_th" placeholder="นามสกุล*" type="text" required autofocus/>
+									</div>
+									<div class="col-xs-12 col-sm-2 col-md-2">
+										<input class="form-control" id="nickname" name="nickname_th" placeholder="ชื่อเล่น" type="text"/>
+									</div>
+								</div>
+								<div class="row" style="margin-bottom: 2px">
+									<div class="col-xs-12 col-sm-6 col-md-6" style="text-align: left;">
+										<select class="form-control" name="university" required autofocus>
+											<option value="">--- มหาวิทยาลัย* ---</option>
+											<option value="">aaa University</option>
+											<option value="">bbb University</option>
+											<option value="">ccc University</option>
+											<option value="">ddddddddddwdwdddwdwdeswwd University</option>>
+											<option value="">อื่นๆ</option>
+										</select>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12 col-sm-6 col-md-6">
+										<input class="form-control" id="university" name="university" placeholder="อื่นๆ โปรดระบุ" type="text"/>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-xs-12 col-sm-6 col-md-6" style="text-align: left;">
+										<label for="degree">ระดับการศีกษา</label>
+										<!--<div class="col-xs-2 col-sm-2 col-md-2">-->
+										<select class="form-control" id="degree">
+											<option value="">ปริญญาตรี</option>
+											<option value="">ปริญญาโท</option>
+										</select>
+										<!--</div>-->
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12 col-sm-6 col-md-6">
+										<input class="form-control" id="major" name="major" placeholder="คณะ" type="text" />
+									</div>
+									<div class="col-xs-12 col-sm-2 col-md-2">
+										<input class="form-control" id="grade" name="grade" placeholder="ชั้นปีที่" type="number" min="1" max="8"""/>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12 col-sm-6 col-md-6">
+										<input class="form-control" id="email" name="email" placeholder="Email*" type="email" />
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12 col-sm-6 col-md-6">
+										<input class="form-control" id="lineid" name="lineid" placeholder="Line ID (ถ้ามี)" type="tel" />
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12 col-sm-4 col-md-4">
+										<input class="form-control" id="mobilephone1" name="mobilephone1" placeholder="เบอร์โทรศัพท์มือถือ*" type="tel" required autofocus/>
+									</div>
+									<div class="col-xs-12 col-sm-4 col-md-4">
+										<input class="form-control" id="mobilephone2" name="mobilephone2" placeholder="เบอร์โทรศัพท์มือถือผู้ปกครอง" type="tel" required autofocus/>
+									</div>
+									<div class="col-xs-12 col-sm-4 col-md-4">
+										<input class="form-control" id="homephone" name="homephone" placeholder="เบอร์โทรศัพท์บ้าน" type="tel" />
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-2 col-md-2">
+										<div style="text-align: left"><b>โปรดเลือก</b></div>
+									</div>
+									<div class="col-xs-12 col-md-12" style="text-align: left;">
+										<input  name="option" value="ever" type="radio"/> เคย เข้าร่วมโครงการ Work & Travel
+										<br>
+										<input  name="option" value="never" type="radio"/> ไม่เคย เข้าร่วมโครงการ Work & Travel
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12 col-sm-4 col-md-4">
+										<input class="form-control" id="TOEFL" name="TOEFL" placeholder="คะแนน TOEFL (ถ้ามี)" type="text" />
+									</div>
+									<div class="col-xs-12 col-sm-4 col-md-4">
+										<input class="form-control" id="TOEIC" name="TOEIC" placeholder="คะแนน TOEIC (ถ้ามี)" type="text" />
+									</div>
+									<div class="col-xs-12 col-sm-4 col-md-4">
+										<input class="form-control" id="IELTS" name="IELTS" placeholder="คะแนน IELTS (ถ้ามี)" type="text" />
+									</div>
+								</div>
+								<div style="text-align: left">ประเภทของงานที่อยากทำ*</div>
+
+								<div class="row">
+									<div class="col-xs-12 col-sm-4 col-md-4" style="text-align: left">
+										<select class="form-control" name="work" required autofocus>
+											<option value="">Amusement Park</option>
+											<option value="">Restaurant Job</option>
+											<option value="">Department stores</option>
+											<option value="">Resort</option>
+											<option value="">National Parks</option>
+											<option value="">Temporary Office Work</option>
+										</select></div>
+								</div>
+								<div style="text-align: left">เลือกวันที่ ที่ผู้สมัครจะเข้ามาทดสอบภาษาอังกฤษ*</div>
+								<div class="row">
+									<div class="col-xs-12 col-sm-4 col-md-4" style="text-align: left">
+										Date: <input class="form-control" type="date" id="datepicker" required autofocus>
+									</div>
+								</div>
+							</div>
+						</div>
+						<br>
+						<div class="col-xs-12 col-md-12">
+							<button class="btn btn-block" style="background-color: #75BAA8; margin-top: 15px; color: white;" type="submit" name="signup" value="signup">SUBMIT</button>
+						</div>
+					</form>
+				</div>
+
+			</div>
+
+		</div>
+	</body>
+</html>
