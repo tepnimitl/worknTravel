@@ -22,7 +22,7 @@ and open the template in the editor.
 		<title>All The Way</title>
 		<meta charset="UTF-8">
 		<meta name="description" content="Education Work and Travel">
-		<meta name="author" content="Tepnimit Lakkanapantip tepnimitl@gmail.com">
+		<meta name="author" content="xxx xxx xxx@xxx.com">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="keywords" content="allthewayeducation.com, work and travel, education, school, study, aboard, international student, work in USA, visa, summer, Work and travel Workandtravel work&travel America USA Aboard Job Interexchange International Inter agency guide 
 			  experience Summer AllTheWay Education Study Language School ESL เวิร์ค แอนด์ ทราเวล เวิร์คแอนด์ทราเวล เวิร์คเมกา เวิร์คอเมริกา 
