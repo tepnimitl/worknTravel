@@ -406,7 +406,7 @@ and open the template in the editor.
 							</p>
 							<br>
 							<p class="copyright"> © 2015 ALL THE WAY EDUCATION. All Rights
-								Reserved. Site designed and developed by Tepnimit
+								Reserved. Site designed and developed by xxx
 							</p>
 							</div>
 						</div>
